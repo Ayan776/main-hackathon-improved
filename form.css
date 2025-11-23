@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container, .signup-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-form h2, .signup-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.login-form label, .signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+.login-input, .signup-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.login-input:focus, .signup-input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52,152,219,0.5);
+}
+
+.login-btn, .signup-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    background-color: #2980b9;
+}
+
+.login-form p, .signup-form p {
+    text-align: center;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.login-form p a, .signup-form p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-form p a:hover, .signup-form p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    .login-container, .signup-container {
+        padding: 30px 20px;
+    }
+
+    .login-btn, .signup-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

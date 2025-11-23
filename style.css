@@ -1,0 +1,202 @@
+.main_name {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar_spacing {
+
+    height: 50px;
+    padding: 30px;
+
+}
+
+.navbar_UI {
+    background-color: #0a0f20;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.posting_container{
+    margin-top: 10px;
+    background: linear-gradient(135deg, #1f342a, #2b3948, #377945, #2d3b4c);
+    border-radius: 0px;
+    
+
+}
+#post_area {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: block;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: #12182B;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+      border: 2px solid #172b20; /* bright neon green */
+    border-radius: 12px;
+    box-shadow: 0 0 5px #45fcbf, 0 0 5px #45f3ff, 0 0 7px #39dae6;
+    transition: all 0.3s ease;
+}
+textarea::placeholder{
+    color: white;
+}
+/* Search bar */
+#search_posts {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto 10px auto;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: #12182B;
+    color: #fff;
+    font-size: 16px;
+     border: 2px solid #172b20; /* bright neon green */
+    border-radius: 12px;
+    box-shadow: 0 0 5px #45fcbf, 0 0 5px #45f3ff, 0 0 7px #39dae6;
+    transition: all 0.3s ease;
+}
+input::placeholder{
+    color: #fff;
+}
+button {
+    display: block;       /* make it block */
+    width: 150px;         /* or any width you want */
+    padding: 10px 20px;
+    margin: 20px auto;    /* centers horizontally */
+    border-radius: 10px;
+    border: none;
+    background-color: #0a0f20;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Posting feed container */
+#posting_feed {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Single post styling */
+.post_card {
+    background-color: #1e2633;
+    padding: 15px 20px;
+    border-radius: 15px;
+    color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post_item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Posting container gradient */
+.posting_container {
+    margin-top: 10px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: #0a0f20;
+}
+
+/* Post card */
+.post_card {
+    background-color: #1e2633;
+    padding: 15px 20px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+/* Post text */
+.post_text {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Time */
+.time {
+    font-size: 12px;
+    color: #aaa;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Post actions (Like button + counter + Delete) */
+.like_btn, .del_btn, .like_counter {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.like_btn, .del_btn {
+    padding: 5px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2b3948;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.like_btn:hover {
+    background-color: #377945;
+}
+.del_btn:hover{
+    background-color: rgb(226, 62, 62);
+}
+
+.post_card .actions_container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    #post_area, #search_posts, #posting_feed {
+        max-width: 90%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
